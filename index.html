@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dyslexia Reading Assistant</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Dyslexia Reading Assistant</h1>
+
+    <!-- Webcam Section -->
+    <div id="camera-container">
+        <video id="webcam" autoplay playsinline></video>
+        <canvas id="output"></canvas>
+    </div>
+
+    <!-- Detected Object & Word -->
+    <div id="word-section">
+        <img id="object-image" src="" alt="Detected Object" hidden>
+        <p id="object-name"></p>
+    </div>
+
+    <!-- Status & Feedback -->
+    <div id="feedback"></div>
+
+    <script src="libs/tf.min.js"></script> <!-- TensorFlow.js -->
+    <script src="script.js"></script>
+</body>
+</html>
